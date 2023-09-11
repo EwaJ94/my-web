@@ -7,53 +7,58 @@
 /* BODY STYLE */
 .my-page{
     height: 100vh;
-    width: 100vw;
+    width: 1500px;
+    margin: 0 auto;
     font-family:Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* BAR STYLE */
 .nav-bar {
     display: block;
     font-size: 28px;
-    
     font-weight: 550;
+    margin: 1% 2%;
+    height: 30px;
+
 }
 
 /* NAVIGATION STYLE */
-.my-name:link {
+.my-name {
     position: relative;
     float: left;
     text-decoration: none;
-    margin: 20px 0 8px 50px;
+    color: black;
 }
 
 .nav-bar ul {
-    position: relative;
     float: right;
-    margin: 20px 50px 8px 0;
 }
 
 .nav-bar li {
     display: inline-block;
+    margin-left: 20px;
 }
 
 .nav-bar ul li a{
-    margin-right: 20px;
+    color: black;
     text-decoration: none;
+    border-bottom: 2px dotted transparent;
 }
 
-.nav-bar ul li a:hover {
-    text-decoration: underline;
+.nav-bar ul li a:hover{
+    transition: border-bottom 0.3s;
+    border-bottom: 3px solid black;
 }
 
 /* CONTAINER*/
 .container {
     position: relative;
     display: block;
-    margin: 0 40px;
     height: 90vh;
-    background-color: rgb(204,115,170,0.3) ;
+    background-color: rgb(204,115,170,0.3);
+    border: 2px solid rgb(204,115,170,0.1);
+    border-radius: 15px;
 }
 
 .header-text img {
@@ -65,21 +70,64 @@
 
 .header-text h1 {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 8%;
     font-size: 50px;
+    text-shadow: 4px 4px 10px grey;
 }
 
 .header-text p {
     position: absolute;
-    top: 68%;
+    top: 65%;
     left: 15%;
     font-size: 27px;
+    font-style: italic;
+}
+
+/* ABOUT ME */
+.about-me h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.about-me p {
+    width: 1200px;
+    margin: 2% auto;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+/* PROJECTS */
+.projects h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.projects p {
+    width: 1200px;
+    margin: 2% auto;
+    text-align: center;
+    font-size: 20px;
+    
 }
 
 /* FOOTER */
+.footer-text::before {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 2px solid #8C0F77;
+    margin-bottom: 2%;
+}
 .footer-text {
-    margin: 20px 50px;
+   font-size: 15px;
 }
 
 
